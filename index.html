@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamepad</title>
+    <link rel="icon" href="./gmsimg/img-2.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- nav-bar coding -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container" id="nav">
+            <a class="navbar-brand d-flex align-items-center me-5" href="#">
+                <img src="./gmsimg/pngimg.com - gamepad_PNG95.png" alt="Logo" width="40" height="40" class="me-2">
+                <span class="fw-bold">Gamepad</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#nav"><i class="fa fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#abt"><i class="fa fa-user"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Feature"><i class="fa fa-star"></i> Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pros"><i class="fa fa-box"></i> Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tests"><i class="fa fa-comment"></i> Testimonial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cont"><i class="fa fa-envelope"></i> Contact</a></li>
+                    
+                    <li class="nav-item cart-btn position-relative">
+                        <button class="btn btn-primary position-relative" onclick="toggleCart()">
+                            <i class="fas fa-shopping-cart"></i> View Cart
+                            <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display:none;">
+                                0
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- carousel coding -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center text-md-start">
+                            <h2>Video games controller</h2>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./gmsimg/img-1.png" class="d-block w-100" alt="Slide 1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center text-md-start">
+                            <h2>Video games controller</h2>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./gmsimg/img-1.png" class="d-block w-100" alt="Slide 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center text-md-start">
+                            <h2>Video games controller</h2>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="./gmsimg/img-1.png" class="d-block w-100" alt="Slide 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+<!-- About coding -->
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <img src="./gmsimg/img-2.png" class="img-fluid" alt="Placeholder Image">
+            </div>
+            <div class="col-md-6 content" id="abt">
+                <h2>About</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                <button class="btn btn-primary btn-custom">Shop now</button>
+            </div>
+        </div>
+    </div>
+<!-- features coding -->
+    <div class="content-container mt-5">
+        <h1 class="text-heading text-center" id="Feature">Gamepad Features</h1>
+        <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./gmsimg/play-4.jpeg" class="d-block w-100" alt="Feature 1">
+                    <div class="text-feature text-center">
+                        <h3>Economic Design</h3>
+                        <p><i class="fas fa-hand-holding-heart icon-feature"></i> Comfortable grip for long gaming sessions</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./gmsimg/pexels-1.webp" class="d-block w-100" alt="Feature 2">
+                    <div class="text-feature text-center">
+                        <h3>Wireless Connectivity</h3>
+                        <p><i class="fas fa-wifi icon-feature"></i> Seamless wireless experience</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./gmsimg/pexels-2.webp" class="d-block w-100" alt="Feature 3">
+                    <div class="text-feature text-center">
+                        <h3>Customizable Buttons</h3>
+                        <p><i class="fas fa-sliders-h icon-feature"></i> Personalize controls as per your style</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+<!-- Product coding -->
+<h1 class="h1 text-center" id="pros">Our products</h1>
+
+    <div class="container mt-5">
+        <div class="row" id="product-list"></div>
+    </div>
+    <!-- Cart page coding -->
+    <div class="cart-container" id="cart-container">
+        <h5>Cart</h5>
+        <ul id="cart-items" class="list-group"></ul>
+        <p class="cart-summary">Total: $<span id="total-price">0</span></p>
+        <button class="btn btn-danger" onclick="clearCart()">Remove All</button>
+        <button class="btn btn-secondary" onclick="toggleCart()">Cancel</button> <!-- Cancel Button -->
+    </div>
+    <!-- Alert coding -->
+    <div id="notification">Product added to cart!</div>
+    <!-- Testimonial coding -->
+    <div class="container py-5">
+        <h2 class="text-center mb-4" id="tests">Testimonial</h2>
+        <h2 class="text-center mb-4">What Gamers Say</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial">
+                        <img src="./gmsimg/ts-1.png" alt="User">
+                        <p>"This gamepad changed my gaming experience! Super responsive and comfortable A video game consists primarily of three vital parts which include the gameplay universe and user interface together with visual effects. The combination of all these elements results in the complete feel and visual presentation of the game."</p>
+                        <h5>- Alex Johnson</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial">
+                        <img src="./gmsimg/ts-2.png" alt="User">
+                        <p>"Best controller I've used in years! Works flawlessly on all platforms Maining is where the player chooses one specific option and plays that option far more frequently than any other option. This term is the most common in team based games such as Overwatch and DOTA or brawler games such as Super Smash Bros. "</p>
+                        <h5>- Maria Lopez</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial">
+                        <img src="./gmsimg/ts-3.jpg" alt="User">
+                        <p>"Top-notch quality and great battery life. A must-have for serious gamers.A player character (also known as a playable character or PC) is a fictional character in a video game or tabletop role-playing game whose actions are controlled by a player rather than the rules of the game. The characters that are not controlled by a player are called non-player characters (NPCs)."</p>
+                        <h5>- James Smith</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <!-- Login form coding -->
+    <div class="main-container">
+        <div class="row g-4">
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="auth-form w-100">
+                    <h2 class="text-center" id="cont">Login</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Map coding -->
+            <div class="col-md-6">
+                <div class="location-container">
+                    <h2 class="text-center">Map</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31600.301028193033!2d77.50533109440325!3d8.097645191411232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04ed412baf4f05%3A0xdc0448e04f6b9c1f!2sSwaminathapuram%2C%20Tamil%20Nadu%20629702!5e0!3m2!1sen!2sin!4v1743773508295!5m2!1sen!2sin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer coding -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row text-md-start text-center">
+        <div class="col-md-4">
+          <div class="gamepad-icon">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <h5>Gamepad</h5>
+          <p>Level up your gaming experience with the latest gear and game news.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Gear</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Connect with Us</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fab fa-twitch"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+          <p>Email: support@gamezone.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom mt-4">
+        <p>&copy; 2025 GameZone. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Add to cart javascript coding -->
+    <script>
+        const products = [
+            { id: 1, name: "Gamepad X1", price: 10000, img: "gmsimg/gp-1.webp" },
+            { id: 2, name: "Gamepad Pro", price: 20000, img: "gmsimg/pexels-4.jpeg" },
+            { id: 3, name: "Gamepad Elite", price: 15000, img: "gmsimg/pexels-6.webp" },
+            { id: 4, name: "Gamepad Turbo", price: 7000, img: "gmsimg/pexels-7.webp" },
+            { id: 5, name: "Gamepad Ultra", price: 9000, img: "gmsimg/pexels-9.jpeg" },
+            { id: 6, name: "Gamepad Super", price: 20000, img: "gmsimg/pexels-10.webp" },
+            { id: 7, name: "Gamepad Hyper", price: 15000, img: "gmsimg/pexels-photo-275033.jpeg" },
+            { id: 8, name: "Gamepad Max", price: 7000, img: "gmsimg/gp-6.avif" },
+            { id: 9, name: "Gamepad Neo", price: 4000, img: "gmsimg/gp-5.jpg" },
+            { id: 10, name: "Gamepad Edge", price: 5000, img: "gmsimg/gp-4.webp" },
+            { id: 11, name: "Gamepad Fusion", price: 8000, img: "gmsimg/pexels-2.webp" },
+            { id: 12, name: "Gamepad Blast", price: 20000, img: "gmsimg/play-3.jpeg" }
+        ];
+    
+        let cart = [];
+    
+        function displayProducts() {
+            let productContainer = document.getElementById("product-list");
+            products.forEach(product => {
+                productContainer.innerHTML += `
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-card">
+                            <img src="${product.img}" alt="${product.name}">
+                            <h5>${product.name}</h5>
+                            <p>$${product.price}</p>
+                            <button class="btn btn-primary btn-sm" onclick="addToCart(${product.id})">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+    
+        function addToCart(productId) {
+            let product = products.find(p => p.id === productId);
+            let existingProduct = cart.find(p => p.id === productId);
+            if (existingProduct) {
+                existingProduct.quantity++;
+            } else {
+                cart.push({ ...product, quantity: 1 });
+            }
+            updateCartView();
+            showNotification(`${product.name} added to cart!`);
+        }
+    
+        function updateCartView() {
+            let cartItems = document.getElementById("cart-items");
+            let totalPrice = document.getElementById("total-price");
+            let badge = document.getElementById("cart-badge");
+    
+            cartItems.innerHTML = "";
+            let total = 0;
+            let itemCount = 0;
+    
+            cart.forEach(item => {
+                total += item.price * item.quantity;
+                itemCount += item.quantity;
+                cartItems.innerHTML += `
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        ${item.name} (x${item.quantity}) - $${item.price} each
+                        <button class="btn btn-sm btn-danger" onclick="removeFromCart(${item.id})">Remove</button>
+                    </li>
+                `;
+            });
+    
+            totalPrice.textContent = total;
+    
+            // Update badge
+            if (itemCount > 0) {
+                badge.style.display = "inline-block";
+                badge.textContent = itemCount;
+            } else {
+                badge.style.display = "none";
+            }
+        }
+    
+        function removeFromCart(productId) {
+            cart = cart.filter(item => item.id !== productId);
+            updateCartView();
+        }
+    
+        function clearCart() {
+            cart = [];
+            updateCartView();
+        }
+    
+        function toggleCart() {
+            let cartContainer = document.getElementById("cart-container");
+            cartContainer.style.display = cartContainer.style.display === "none" ? "block" : "none";
+        }
+    
+        function showNotification(message = "Product added to cart!") {
+            const notification = document.getElementById("notification");
+            notification.textContent = message;
+            notification.style.display = "block";
+    
+            setTimeout(() => {
+                notification.style.display = "none";
+            }, 2000);
+        }
+    
+        
+            displayProducts();
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
